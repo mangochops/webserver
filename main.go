@@ -36,7 +36,7 @@ func main(){
 	r.HandleFunc("/movies/{id}", updateMovie).Methods("PUT")
 	r.HandleFunc("/movies/{id}", deleteMovie).Methods("DELETE")
 
-	fmt.Println("Starting server on port 8000...")
+	fmt.Println("Starting server on port 8000")
 	log.Fatal(http.ListenAndServe(":8000", r))
 
 }
